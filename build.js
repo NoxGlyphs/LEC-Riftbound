@@ -28,5 +28,6 @@ fs.writeFileSync('./dist/index.html', formattedHtml, 'utf-8');
 fs.cpSync('./src/css', './dist/css', { recursive: true });
 fs.cpSync('./src/js', './dist/js', { recursive: true });
 fs.cpSync('./src/assets', './dist/assets', { recursive: true });
+fs.copyFileSync('./robots.txt', './dist/robots.txt');
 
 console.log('Build completed and saved to /dist');

@@ -7,3 +7,24 @@
 html{
 	overflow-x: hidden;
 }
+
+
+.team-section {
+  margin-top: 40px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo-container {
+  margin-right: 20px;
+}
+
+/* TODO: hacer reactive */
+.team-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
