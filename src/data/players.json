@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Caps",
+        "team": "G2",
+        "role": "mid",
+        "country": "Denmark",
+        "legend": true,
+        "artist": "yue"
+    },    
+    {
+        "name": "BBL",
+        "team": "G2",
+        "role": "top",
+        "country": "Norway",
+        "legend": false,
+        "artist": "obama"
+    },
+    {
+        "name": "Upset",
+        "team": "Fnatic",
+        "role": "adc",
+        "country": "Sweden",
+        "legend": true,
+        "artist": "obama"
+    }
+]
