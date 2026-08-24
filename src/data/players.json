@@ -1,26 +1,491 @@
 [
     {
+        "name": "BrokenBlade",
+        "team": "G2 Esports",
+        "role": "top",
+        "country": "Germany",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "SkewMond",
+        "team": "G2 Esports",
+        "role": "jungle",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
         "name": "Caps",
-        "team": "G2",
+        "team": "G2 Esports",
+        "role": "mid",
+        "country": "Denmark",
+        "legend": false,
+        "artist": "yue"
+    },
+    {
+        "name": "Hans Sama",
+        "team": "G2 Esports",
+        "role": "adc",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Labrov",
+        "team": "G2 Esports",
+        "role": "support",
+        "country": "Greece",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Caps",
+        "team": "G2 Esports",
         "role": "mid",
         "country": "Denmark",
         "legend": true,
         "artist": "yue"
-    },    
+    },
+
     {
-        "name": "BBL",
-        "team": "G2",
+        "name": "Soboro",
+        "team": "Fnatic",
         "role": "top",
-        "country": "Norway",
+        "country": "South Korea",
         "legend": false,
-        "artist": "obama"
+        "artist": ""
+    },
+    {
+        "name": "Razork",
+        "team": "Fnatic",
+        "role": "jungle",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Vladi",
+        "team": "Fnatic",
+        "role": "mid",
+        "country": "Greece",
+        "legend": false,
+        "artist": ""
     },
     {
         "name": "Upset",
         "team": "Fnatic",
         "role": "adc",
-        "country": "Sweden",
-        "legend": true,
+        "country": "Germany",
+        "legend": false,
         "artist": "obama"
+    },
+    {
+        "name": "Lospa",
+        "team": "Fnatic",
+        "role": "support",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Razork",
+        "team": "Fnatic",
+        "role": "jungle",
+        "country": "Spain",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Naak Nako",
+        "team": "Team Vitality",
+        "role": "top",
+        "country": "Turkey",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Lyncas",
+        "team": "Team Vitality",
+        "role": "jungle",
+        "country": "Lithuania",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "FIESTA",
+        "team": "Team Vitality",
+        "role": "mid",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Carzzy",
+        "team": "Team Vitality",
+        "role": "adc",
+        "country": "Czechia",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Fleshy",
+        "team": "Team Vitality",
+        "role": "support",
+        "country": "Turkey",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Carzzy",
+        "team": "Team Vitality",
+        "role": "adc",
+        "country": "Czechia",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Oscarinin",
+        "team": "GIANTX",
+        "role": "top",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Isma",
+        "team": "GIANTX",
+        "role": "jungle",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Jackies",
+        "team": "GIANTX",
+        "role": "mid",
+        "country": "Czechia",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Flakked",
+        "team": "GIANTX",
+        "role": "adc",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Jun",
+        "team": "GIANTX",
+        "role": "support",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Flakked",
+        "team": "GIANTX",
+        "role": "adc",
+        "country": "Spain",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Canna",
+        "team": "Karmine Corp",
+        "role": "top",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Yike",
+        "team": "Karmine Corp",
+        "role": "jungle",
+        "country": "Sweden",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Kyeahoo",
+        "team": "Karmine Corp",
+        "role": "mid",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Caliste",
+        "team": "Karmine Corp",
+        "role": "adc",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Busio",
+        "team": "Karmine Corp",
+        "role": "support",
+        "country": "United States",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Caliste",
+        "team": "Karmine Corp",
+        "role": "adc",
+        "country": "France",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Myrwn",
+        "team": "Movistar KOI",
+        "role": "top",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Elyoya",
+        "team": "Movistar KOI",
+        "role": "jungle",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Jojopyun",
+        "team": "Movistar KOI",
+        "role": "mid",
+        "country": "Canada",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Supa",
+        "team": "Movistar KOI",
+        "role": "adc",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Alvaro",
+        "team": "Movistar KOI",
+        "role": "support",
+        "country": "Spain",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Elyoya",
+        "team": "Movistar KOI",
+        "role": "jungle",
+        "country": "Spain",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Maynter",
+        "team": "Natus Vincere",
+        "role": "top",
+        "country": "Ukraine",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Rhilech",
+        "team": "Natus Vincere",
+        "role": "jungle",
+        "country": "Turkey",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Poby",
+        "team": "Natus Vincere",
+        "role": "mid",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "SamD",
+        "team": "Natus Vincere",
+        "role": "adc",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Parus",
+        "team": "Natus Vincere",
+        "role": "support",
+        "country": "Turkey",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Maynter",
+        "team": "Natus Vincere",
+        "role": "mid",
+        "country": "Ukraine",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Rooster",
+        "team": "Shifters",
+        "role": "top",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Boukada",
+        "team": "Shifters",
+        "role": "jungle",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "nuc",
+        "team": "Shifters",
+        "role": "mid",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Paduck",
+        "team": "Shifters",
+        "role": "adc",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Stend",
+        "team": "Shifters",
+        "role": "support",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "nuc",
+        "team": "Shifters",
+        "role": "mid",
+        "country": "France",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Wunder",
+        "team": "SK Gaming",
+        "role": "top",
+        "country": "Denmark",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Skeanz",
+        "team": "SK Gaming",
+        "role": "jungle",
+        "country": "France",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "SlowQ",
+        "team": "SK Gaming",
+        "role": "mid",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Jopa",
+        "team": "SK Gaming",
+        "role": "adc",
+        "country": "Croatia",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Mikyx",
+        "team": "SK Gaming",
+        "role": "support",
+        "country": "Slovenia",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Wunder",
+        "team": "SK Gaming",
+        "role": "top",
+        "country": "Denmark",
+        "legend": true,
+        "artist": ""
+    },
+
+    {
+        "name": "Tracyn",
+        "team": "Team Heretics",
+        "role": "top",
+        "country": "Poland",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Daglas",
+        "team": "Team Heretics",
+        "role": "jungle",
+        "country": "Poland",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Serin",
+        "team": "Team Heretics",
+        "role": "mid",
+        "country": "Turkey",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Hype",
+        "team": "Team Heretics",
+        "role": "adc",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Way",
+        "team": "Team Heretics",
+        "role": "support",
+        "country": "South Korea",
+        "legend": false,
+        "artist": ""
+    },
+    {
+        "name": "Serin",
+        "team": "Team Heretics",
+        "role": "mid",
+        "country": "Turkey",
+        "legend": true,
+        "artist": ""
     }
 ]

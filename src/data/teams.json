@@ -1,10 +1,42 @@
 [
     {
-        "name": "G2",
-        "logo": "https://riftbound-lec.neocities.org/images/G2_logo.png"
+        "name": "G2 Esports",
+        "logo": "https://riftbound-lec.neocities.org/images/G2_Esports_logo.png"
     },
     {
         "name": "Fnatic",
         "logo": "https://riftbound-lec.neocities.org/images/Fnatic_logo.png"
+    },
+    {
+        "name": "Team Vitality",
+        "logo": "https://riftbound-lec.neocities.org/images/Team_Vitality_logo.png"
+    },
+    {
+        "name": "GIANTX",
+        "logo": "https://riftbound-lec.neocities.org/images/GIANTX_logo.png"
+    },
+    {
+        "name": "Karmine Corp",
+        "logo": "https://riftbound-lec.neocities.org/images/Karmine_Corp_logo.png"
+    },
+    {
+        "name": "Movistar KOI",
+        "logo": "https://riftbound-lec.neocities.org/images/Movistar_KOI_logo.png"
+    },
+    {
+        "name": "Natus Vincere",
+        "logo": "https://riftbound-lec.neocities.org/images/Natus_Vincere_logo.png"
+    },
+    {
+        "name": "Shifters",
+        "logo": "https://riftbound-lec.neocities.org/images/Shifters_logo.png"
+    },
+    {
+        "name": "SK Gaming",
+        "logo": "https://riftbound-lec.neocities.org/images/SK_Gaming_logo.png"
+    },
+    {
+        "name": "Team Heretics",
+        "logo": "https://riftbound-lec.neocities.org/images/Team_Heretics_logo.png"
     }
 ]

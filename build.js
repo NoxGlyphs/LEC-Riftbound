@@ -9,13 +9,8 @@ const layout = fs.readFileSync('./src/layout.html', 'utf-8');
 const cardsHtml = teams.map((team) => {
     const roster = players.filter(player => player.team === team.name);
 
-    if (roster.length === 0) {
-        console.error(`Data ERROR: No players found for team: ${team.name}`);
-        return '';
-    }
-    if (roster.length > 6) {
-        console.error(`Data ERROR: More than 6 players found for team: ${team.name}.`);
-        return '';
+    if (roster.length != 6) {
+        throw new Error(`Data ERROR: team "${team.name}" has ${roster.length} cards instead of 6 (5 lanes + legend card). Check /src/data/players.json`);
     }
     
     return renderTeam(team, roster)
