@@ -20,11 +20,9 @@ export default function renderTeam(team, roster) {
         <h3>${team.name}</h3>
       </div>  
 
-      <div class="docs-galley mb-3">
-        <ul id="test-gallery1" class="docs-pictures clearfix">
-            ${renderPlayers(roster)}
-        </ul>
-      </div>
+      <ul class="card-gallery">
+          ${renderPlayers(roster)}
+      </ul>
     </section>
   `;
 

@@ -21,6 +21,7 @@ const formattedHtml = await prettier.format(finalHtml, {
     parser: 'html'
 });
 
+fs.rmSync('./dist', { recursive: true, force: true });
 fs.mkdirSync('./dist', { recursive: true });
 
 fs.writeFileSync('./dist/index.html', formattedHtml, 'utf-8');
