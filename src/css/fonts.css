@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Arpona";
-  src: url("/assets/fonts/Fontspring-DEMO-arpona-regular.otf")
+  src: url("../assets/fonts/Fontspring-DEMO-arpona-regular.otf")
     format("opentype");
   font-weight: normal;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/DMSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
