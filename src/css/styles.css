@@ -12,6 +12,16 @@
   --seagrass: #12a78eff;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+html.viewer-open {
+  overflow: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -25,10 +35,6 @@ body {
   );
   background-attachment: fixed;
   color: var(--alabaster-grey);
-}
-
-html {
-  overflow-x: hidden;
 }
 
 h1 {
@@ -103,13 +109,14 @@ header {
 
 .card {
   position: relative;
-  max-width: 200px; /* TODO: reactive */
+  max-width: 240px; /* TODO: reactive */
+  aspect-ratio: 63 / 88;
   border: 3px solid var(--alabaster-grey);
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
   text-align: center;
-  transition: ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
 }
 
 .card:hover {
@@ -118,9 +125,9 @@ header {
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
-  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* TODO: ns si es mejor cover o contain para que no se deforme o se vea peor*/
   display: block;
 }
 
@@ -138,19 +145,33 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
   overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #viewer-content {
   display: flex;
-  justify-content: center;
+  position: relative;
+  justify-content: space-between;
+  gap: 1.6rem;
   align-items: center;
   width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding-inline: 2rem;
+}
+
+#viewer-image {
   height: 100%;
+  object-fit: contain;
+  border: 3px solid var(--alabaster-grey);
+  border-radius: 8px;
 }
 
 #viewer-gallery {

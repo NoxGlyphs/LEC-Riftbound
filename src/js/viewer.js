@@ -34,6 +34,7 @@ export function setupViewer(galleries) {
             const image = card.querySelector('img');
 
             const thumbnail = document.createElement('img');
+            thumbnail.classList.add('viewer-thumbnail');
 
             thumbnail.src = image.src;
             thumbnail.alt = image.alt;
@@ -54,6 +55,7 @@ export function setupViewer(galleries) {
                 setupThumbnails(cards);
                 showCard(index, cards);
                 viewer.showModal();
+                document.documentElement.classList.add('viewer-open');
             });
         });
     });
@@ -71,13 +73,18 @@ export function setupViewer(galleries) {
         console.log('Next button clicked. New index:', newIndex);
     });
 
-    closeButton.addEventListener('click', () => {
+    function closeViewer() {
         viewer.close();
+        document.documentElement.classList.remove('viewer-open');
+    }
+
+    closeButton.addEventListener('click', () => {
+        closeViewer();
     });
 
     viewer.addEventListener('click', (event) => {
         if (event.target === viewer) {
-            viewer.close();
+            closeViewer();
         }
     });
 }
