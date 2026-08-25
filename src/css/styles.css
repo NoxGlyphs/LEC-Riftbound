@@ -52,16 +52,14 @@ h3 {
   font-family: "DM Sans";
 }
 
-main {
-  width: 70%;
-  margin: auto;
-  border: 1px dashed var(--ochre);
-  outline: 1px dotted var(--seagrass);
-  outline-offset: 5px;
-}
-
 header {
   padding: 30px;
+}
+
+main {
+  margin-inline: 3rem;
+  outline: 1px dotted var(--seagrass);
+  outline-offset: 5px;
 }
 
 .team-section {
@@ -97,7 +95,7 @@ header {
 .card-list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 5px;
+  gap: 2rem;
   list-style-type: none;
 }
 @container (max-width: 1400px) {
@@ -114,7 +112,6 @@ header {
   border: 3px solid var(--alabaster-grey);
   border-radius: 8px;
   overflow: hidden;
-  margin: 10px;
   text-align: center;
   transition: transform ease-in-out 0.5s;
 }
