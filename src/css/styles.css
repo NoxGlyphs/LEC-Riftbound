@@ -1,77 +1,100 @@
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "DMSans";
 }
 
-html{
-	overflow-x: hidden;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: "Arpona";
+}
+
+h3 {
+  font-family: "DM Sans";
+}
 
 .team-section {
-  	margin-top: 40px;
+  margin-top: 40px;
 }
 
 .team-header {
-  	display: flex;
- 	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .team-logo-container {
-  	margin-right: 20px;
+  margin-right: 20px;
 }
 
 /* TODO: hacer reactive */
 .team-logo {
-	width: 100px;
-	height: auto;
-	margin-bottom: 10px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .card-gallery {
-	container-type: inline-size;
+  container-type: inline-size;
 
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .card-list {
-	flex-grow: 1;
-  	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-  	gap: 20px;
-	list-style-type: none;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  list-style-type: none;
 }
-@container (max-width: 1400px) { /*TODO: query */
-    .card-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@container (max-width: 1400px) {
+  /*TODO: query */
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.card{
-	position: relative;
-	max-width: 200px; /* TODO: reactive */
-	border: 3px solid red;
-	border-radius: 8px;
-	overflow: hidden;
-	margin: 10px;
-	text-align: center;
+.card {
+  position: relative;
+  max-width: 200px; /* TODO: reactive */
+  border: 3px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .card span {
-	display: none;
+  display: none;
 }
 
-.prev, .next {
-	display: none;
+.prev,
+.next {
+  display: none;
+}
+
+main {
+  width: 80%;
+  margin: auto;
 }
