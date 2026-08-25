@@ -1,11 +1,21 @@
 export default function renderCard(player) {
-  return `
-    <figure class="card">
-      <img
-        data-original="assets/images/placeholders/placeholder_card.png"
-        src="assets/images/placeholders/placeholder_card.png"
-      />
-      <span>${player.name}</span>
-    </figure>
-  `;
+    const miniatureUrl =
+        player.images?.miniature ??
+        'assets/images/placeholders/placeholder_card.png';
+
+    const fullImageUrl =
+        player.images?.full ??
+        'assets/images/placeholders/placeholder_card.png';
+
+    return `
+        <figure class="card">
+            <img
+                src="${miniatureUrl}"
+                data-original="${fullImageUrl}"
+                alt="${player.name} card"
+                onerror="this.onerror=null; this.src='assets/images/placeholders/placeholder_card.png';"
+            />
+            <span>${player.name}</span>
+        </figure>
+    `;
 }

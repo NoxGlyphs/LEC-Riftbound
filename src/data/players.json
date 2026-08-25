@@ -5,7 +5,11 @@
         "role": "top",
         "country": "Germany",
         "legend": false,
-        "artist": ""
+        "artist": "",
+        "images": {
+            "miniature": "assets/images/cards/miniatures/brokenblade_miniature.png", 
+            "full": "assets/images/cards/full/brokenblade_full.png"
+        }
     },
     {
         "name": "SkewMond",
@@ -21,7 +25,11 @@
         "role": "mid",
         "country": "Denmark",
         "legend": false,
-        "artist": "yue"
+        "artist": "yue",
+        "images": {
+            "miniature": "assets/images/cards/miniatures/caps_miniature.png", 
+            "full": "assets/images/cards/full/caps_full.png"
+        }
     },
     {
         "name": "Hans Sama",
