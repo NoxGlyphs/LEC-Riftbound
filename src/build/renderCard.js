@@ -5,7 +5,7 @@ export default function renderCard(player) {
 
     const fullImageUrl =
         player.images?.full ??
-        'assets/images/placeholders/placeholder_card.png';
+        miniatureUrl;
 
     return `
         <figure class="card">
@@ -13,7 +13,10 @@ export default function renderCard(player) {
                 src="${miniatureUrl}"
                 data-original="${fullImageUrl}"
                 alt="${player.name} card"
-                onerror="this.onerror=null; this.src='assets/images/placeholders/placeholder_card.png';"
+                onerror="
+                    this.src='assets/images/placeholders/placeholder_card.png'; 
+                    this.dataset.original='assets/images/placeholders/placeholder_card.png';
+                "
             />
             <span>${player.name}</span>
         </figure>

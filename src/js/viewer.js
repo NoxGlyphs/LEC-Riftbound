@@ -1,4 +1,4 @@
-export function setupViewer(gallery) {
+export function setupViewer(galleries) {
     const viewer = document.getElementById('viewer');
     const viewerImage = document.getElementById('viewer-image');
     const closeButton = document.getElementById('close-viewer');
@@ -6,20 +6,28 @@ export function setupViewer(gallery) {
     const nextButton = document.getElementById('viewer-next');
     const viewerGallery = document.getElementById('viewer-gallery');
 
-    const cards = Array.from(gallery.getElementsByClassName('card'));
-
+    let currentCards = [];
     let currentIndex = 0;
 
-    function showCard(index) {
+    function showCard(index, cards = currentCards) {
+        currentCards = cards;
         currentIndex = index;
 
-        const image = cards[currentIndex].querySelector('img');
+        const image = currentCards[currentIndex].querySelector('img');
+        const fallbackSrc = image.currentSrc || image.src;
 
-        viewerImage.src = image.src;
+        viewerImage.onerror = function () {
+            this.onerror = null;
+            this.src = fallbackSrc;
+            this.alt = image.alt;
+        };
+
+        viewerImage.removeAttribute('src');
+        viewerImage.src = image.dataset.original;
         viewerImage.alt = image.alt;
     }
 
-    function setupThumbnails() {
+    function setupThumbnails(cards) {
         viewerGallery.innerHTML = '';
 
         cards.forEach((card, index) => {
@@ -38,22 +46,27 @@ export function setupViewer(gallery) {
         });
     }
 
-    cards.forEach((card, index) => {
-        card.addEventListener('click', () => {
-            setupThumbnails();
-            showCard(index);
-            viewer.showModal();
+    Array.from(galleries).forEach((gallery) => {
+        const cards = Array.from(gallery.getElementsByClassName('card'));
+
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                setupThumbnails(cards);
+                showCard(index, cards);
+                viewer.showModal();
+            });
         });
     });
 
     prevButton.addEventListener('click', () => {
-        const newIndex = (currentIndex - 1 + cards.length) % cards.length;
+        const newIndex =
+            (currentIndex - 1 + currentCards.length) % currentCards.length;
         showCard(newIndex);
         console.log('Previous button clicked. New index:', newIndex);
     });
 
     nextButton.addEventListener('click', () => {
-        const newIndex = (currentIndex + 1) % cards.length;
+        const newIndex = (currentIndex + 1) % currentCards.length;
         showCard(newIndex);
         console.log('Next button clicked. New index:', newIndex);
     });
