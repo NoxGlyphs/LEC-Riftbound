@@ -347,7 +347,11 @@
         "role": "mid",
         "country": "Ukraine",
         "legend": true,
-        "artist": ""
+        "artist": "",
+        "images": {
+            "miniature": "assets/images/cards/miniatures/maynter_miniature.png", 
+            "full": "assets/images/cards/full/maynter_full.png"
+        }
     },
 
     {
