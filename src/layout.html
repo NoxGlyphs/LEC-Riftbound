@@ -7,8 +7,7 @@
 	<link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LEC Riftbound</title>
-  <link rel="stylesheet" href="js/viewerjs-1.11.8/docs/css/viewer.css" />
-  <link rel="stylesheet" href="js/viewerjs-1.11.8/docs/css/main.css" />
+	<script type="module" src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -18,9 +17,13 @@
 	</header>
 	
 	<main>
-		<h2>Cards</h2>
 
-    <!--CARDS-->
+    	<!--CARDS-->
+
+		<dialog id="viewer">
+			<img id="viewer-image" src="" alt="Viewer Image">
+			<button id="close-viewer">Close</button>
+		</dialog>
 		
 	</main>
 

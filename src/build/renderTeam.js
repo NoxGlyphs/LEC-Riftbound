@@ -17,12 +17,17 @@ export default function renderTeam(team, roster) {
         <div class="team-logo-container">
           <img class="team-logo" src="${team.logo}" alt="${team.name} logo" onerror="this.onerror=null; this.src='assets/images/placeholders/placeholder_team_logo.png';">      
         </div>
-        <h3>${team.name}</h3>
+        <h2>${team.name}</h2>
       </div>  
 
-      <ul class="card-gallery">
-          ${renderPlayers(roster)}
-      </ul>
+      <div class="card-gallery" id="${team.name}-gallery">
+        <button class="prev">←</button>
+        <ul class="card-list">
+            ${renderPlayers(roster)}
+        </ul>
+        <button class="next">→</button>
+      </div>
+
     </section>
   `;
 
