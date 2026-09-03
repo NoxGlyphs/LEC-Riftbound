@@ -18,25 +18,17 @@ export function setupCardHover() {
         const rotateY = px * 12; // degrees
         const rotateX = -py * 12; // degrees
 
-        // main hovered card tilts and pops forward
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(28px) scale(1.04)`;
-        card.style.boxShadow = '0 30px 60px rgba(2,8,23,0.55), 0 6px 16px rgba(0,0,0,0.35)';
-
-        // siblings lift slightly away to create the "push" effect
-        cards.forEach((c) => {
-          if (c === card) return;
-          c.style.transform = 'translateY(-14px) scale(0.985)';
-          c.style.filter = 'brightness(0.92) saturate(0.95)';
-          c.style.boxShadow = '0 10px 30px rgba(2,8,23,0.28)';
-        });
+        // main hovered card tilts and pops forward; remove sibling lift
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(28px) scale(1.08)`;
+        card.style.boxShadow = '0 36px 72px rgba(2,8,23,0.6), 0 8px 18px rgba(0,0,0,0.36)';
+        card.style.filter = 'brightness(1.02) saturate(1.02)';
       };
 
       const onLeave = () => {
-        cards.forEach((c) => {
-          c.style.transform = '';
-          c.style.boxShadow = '';
-          c.style.filter = '';
-        });
+        // Reset only the hovered card styles
+        card.style.transform = '';
+        card.style.boxShadow = '';
+        card.style.filter = '';
       };
 
       card.addEventListener('mousemove', onMove);
