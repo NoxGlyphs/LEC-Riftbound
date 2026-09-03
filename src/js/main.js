@@ -1,6 +1,6 @@
 import {setupCarrousel} from './carrousel.js';
 import {setupViewer} from './viewer.js';
-import Lenis from '@studio-freight/lenis';
+import Lenis from './vendor/lenis.mjs';
 
 // Inicialización de Lenis (smooth scroll)
 const lenis = new Lenis({ duration: 1.2, smooth: true });
