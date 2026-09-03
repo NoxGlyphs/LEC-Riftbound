@@ -31,6 +31,21 @@ export function setupCardHover() {
         card.style.filter = '';
       };
 
+      const onEnter = (e) => {
+        // Apply a small default tilt immediately when the cursor enters so the effect is visible
+        const rect = card.getBoundingClientRect();
+        const x = e?.clientX ?? rect.left + rect.width / 2;
+        const y = e?.clientY ?? rect.top + rect.height / 2;
+        const px = (x / rect.width - 0.5) * 2;
+        const py = (y / rect.height - 0.5) * 2;
+        const rotateY = px * 8;
+        const rotateX = -py * 8;
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px) scale(1.06)`;
+        card.style.boxShadow = '0 28px 56px rgba(2,8,23,0.55), 0 6px 16px rgba(0,0,0,0.35)';
+        card.style.filter = 'brightness(1.02) saturate(1.02)';
+      };
+
+      card.addEventListener('mouseenter', onEnter);
       card.addEventListener('mousemove', onMove);
       card.addEventListener('mouseleave', onLeave);
       card.addEventListener('touchstart', (e) => {
